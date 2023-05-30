@@ -1,15 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-        <p>This is my new website which is hosted on GitHub Pages!</p>
-    </main>
-  </body>
-</html>
+<html>
+<head>
+<title>R.M.Williams</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>R.M.Williams</h1>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Products</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="hero">
+<img src="hero.jpg" alt="R.M.Williams hero image">
+<h2>Handcrafted leather boots, clothing, and accessories</h2>
+<p>R.M.Williams is a world-renowned brand for handcrafted leather boots, clothing, and accessories. Our products are made with the highest quality materials and craftsmanship, and are designed to last a lifetime.</p>
+<a href="#">Shop Now</a>
+</section>
+<section id="products">
+<h2>Products</h2>
+<ul>
+<li><a href="#">Boots</a></li>
+<li><a href="#">Clothing</a></li>
+<li><a href="#">Accessories</a></li>
+</ul>
+</section>
+<section id="about">
+<h2>About Us</h2>
+<p>R.M.Williams was founded in 1932 by Reginald Murray Williams. RM was a bushman who saw a need for better quality boots and clothing for the Australian outback. He started his business in a small workshop in Adelaide, and over the years R.M.Williams has grown to become one of the most respected brands in Australia.</p>
+<p>R.M.Williams is committed to using the highest quality materials and craftsmanship in its products. All of our products are made in Australia, and we take pride in our commitment to sustainability.</p>
+<a href="#">Learn More</a>
+</section>
+<section id="contact">
+<h2>Contact Us</h2>
+<p>We'd love to hear from you. Please contact us if you have any questions or feedback.</p>
+<ul>
+<li>Email: <a href="#">info@rmwilliams.com.au</a></li>
+<li>Phone: +61 8 8232 8888</li>
+<li>Address: 123 Main Street, Adelaide, Australia</li>
+</ul>
+</section>
+</main>
+<footer>
+<p>Copyright &copy; 2023 R.M.Williams</p>
+</footer>
+
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #005290;
+		font-family: "Arial", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #005290;
+	}
+</style>
+
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+<script type='text/javascript'>
+	var initESW = function(gslbBaseURL) {
+		embedded_svc.settings.displayHelpButton = true; //Or false
+		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+
+		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+
+		// Settings for Chat
+		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+			// Returns a valid button ID.
+		//};
+		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+
+		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+		embedded_svc.settings.entryFeature = 'LiveAgent';
+
+		embedded_svc.init(
+			'https://rmwilliams--chatpoc.sandbox.my.salesforce.com',
+			'https://rmwilliams--chatpoc.sandbox.my.site.com/preferences',
+			gslbBaseURL,
+			'00D1m0000008ubk',
+			'Reactive_Chat_Team',
+			{
+				baseLiveAgentContentURL: 'https://c.la2-c1cs-hnd.salesforceliveagent.com/content',
+				deploymentId: '5721m0000004CNT',
+				buttonId: '5731m0000004CMW',
+				baseLiveAgentURL: 'https://d.la2-c1cs-hnd.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'Reactive_Chat_Team',
+				isOfflineSupportEnabled: false
+			}
+		);
+	};
+
+	if (!window.embedded_svc) {
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://rmwilliams--chatpoc.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://service.force.com');
+	}
+</script>
+
+
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #005290;
+		font-family: "Arial", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #005290;
+	}
+</style>
+
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+<script type='text/javascript'>
+	var initESW = function(gslbBaseURL) {
+		embedded_svc.settings.displayHelpButton = true; //Or false
+		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+
+		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+
+		// Settings for Chat
+		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+			// Returns a valid button ID.
+		//};
+		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+
+		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+		embedded_svc.settings.entryFeature = 'LiveAgent';
+
+		embedded_svc.init(
+			'https://rmwilliams--chatpoc.sandbox.my.salesforce.com',
+			'https://rmwilliams--chatpoc.sandbox.my.site.com/preferences',
+			gslbBaseURL,
+			'00D1m0000008ubk',
+			'Proactive_Chat_Team',
+			{
+				baseLiveAgentContentURL: 'https://c.la2-c1cs-hnd.salesforceliveagent.com/content',
+				deploymentId: '5721m0000004CNT',
+				buttonId: '5731m0000004CMb',
+				baseLiveAgentURL: 'https://d.la2-c1cs-hnd.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'Proactive_Chat_Team',
+				isOfflineSupportEnabled: false
+			}
+		);
+	};
+
+	if (!window.embedded_svc) {
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://rmwilliams--chatpoc.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://service.force.com');
+	}
+</script>
+
+
+</body>
