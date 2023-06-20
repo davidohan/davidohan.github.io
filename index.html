@@ -33,6 +33,10 @@
 function promptUser() {
   var productCode = prompt("Enter the Product Code for Live Chat:");
   alert(productCode);
+  console.log("productCode = " + productCode);
+
+  // Send data to Salesforce
+  //embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"Customer_ID" : "11111111", "Order_Number" : "22222222", "Product_Code" : "33333333", "Chat_Type" : "Proactive"});
 }
 </script>
 <button onclick="promptUser()">Enter Product Code for Live Chat</button>
@@ -66,7 +70,7 @@ function promptUser() {
 				console.log("Received the onEmbeddedMessagingReady event…");
 			
 				// Send data to Salesforce
-				embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"Customer_ID" : "11111111", "Order_Number" : "22222222", "Product_Code" : "33333333", "Chat_Type" : "Proactive"});
+				embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"Customer_ID" : "11111111", "Order_Number" : "22222222", "Product_Code" : "33333333", "Chat_Type" : "Reactive"});
 			
 				// Remove any items from the previous list that you don't want to send
 				//embeddedservice_bootstrap.prechatAPI.removeHiddenPrechatFields(["Customer_ID"]);
