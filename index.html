@@ -37,7 +37,7 @@ function promptUser() {
   console.log("Chat Type = " + chatType);
 
   // Send data to Salesforce
-  embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"Product_Code" : "44444444", "Chat_Type" : "Proactive"});
+  embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"Product_Code" : productCode, "Chat_Type" : chatType});
 }
 </script>
 <button onclick="promptUser()">Enter Product Code for Live Chat</button>
