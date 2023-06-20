@@ -62,13 +62,6 @@ function promptUser() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-			window.addEventListener("onEmbeddedMessagingReady", () => {
-				console.log("Received the onEmbeddedMessagingReady event…");
-			
-				// Send data to Salesforce
-				embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"Product_Code"} : "123");
-			});
-
 			embeddedservice_bootstrap.init(
 				'00D1m0000008udH',
 				'RMW_Messaging_for_Web_Embedded_Service_Deployment',
