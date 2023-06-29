@@ -36,7 +36,7 @@ function promptUser() {
   console.log("Product Code = " + productCode);
   console.log("Chat Type = " + chatType);
 
-  // Send data to Salesforce
+  // Send data to SFSC
   embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"Product_Code" : productCode, "Chat_Type" : chatType});
 }
 </script>
